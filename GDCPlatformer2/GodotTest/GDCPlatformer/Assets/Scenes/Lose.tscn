@@ -1,0 +1,14 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 422.264
+margin_top = 233.528
+margin_right = 481.264
+margin_bottom = 249.528
+rect_scale = Vector2( 5, 5 )
+text = "You Lost"
+__meta__ = {
+"_edit_use_anchors_": false
+}

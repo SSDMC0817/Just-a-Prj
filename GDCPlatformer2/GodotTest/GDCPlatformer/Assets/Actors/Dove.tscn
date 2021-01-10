@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Dove.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/sketch-1599006168493.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Actors/DoveRay.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 9.06253
+height = 9.54175
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 7.74247
+
+[node name="Dove" type="KinematicBody2D" groups=[
+"Dove",
+]]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+speed = 500.0
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=[
+"Dove",
+]]
+position = Vector2( -0.365475, 0.426394 )
+rotation = 1.5708
+shape = SubResource( 1 )
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." groups=[
+"Dove",
+]]
+position = Vector2( 12.5481, -7.61412 )
+shape = SubResource( 2 )
+disabled = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+rotation = -1.5708
+scale = Vector2( 1, 0.4 )
+enabled = true
+collision_mask = 4
+script = ExtResource( 3 )

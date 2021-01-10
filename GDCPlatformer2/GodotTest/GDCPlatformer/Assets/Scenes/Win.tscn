@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 367.188
+margin_top = 248.774
+margin_right = 426.188
+margin_bottom = 262.774
+rect_scale = Vector2( 5, 5 )
+text = "You Win!"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
